@@ -6,7 +6,7 @@ import BodaciousBody from './mainContent/Body';
 
 const AppBackground = styled.div`
   background-color: black;
-  height: 100vh;
+  height: 150vh;
   width: 100vw;
   position: absolute;
   z-index:-1;
@@ -20,7 +20,7 @@ const Blob = styled.div`
   aspect-ratio: 1;
   background: linear-gradient(
     to right,
-    yellow,
+    green,
     mediumpurple
   );
   border-radius: 50%;
@@ -46,7 +46,7 @@ const Blur = styled.div`
   width: 100%;
   position: absolute;
   z-index: 2;
-  backdrop-filter: blur(200px);
+  backdrop-filter: blur(150px);
 `;
 
 const MainContentSectionWrapper = styled.div`

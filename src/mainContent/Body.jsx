@@ -3,12 +3,14 @@ import styled from 'styled-components';
 
 import ChangingName from './components/ChangingName';
 import WhoAmI from './components/WhoAmI';
+import Footer from './components/Footer';
 
 const BodaciousBodyContainer = styled.div`
   width: 100%;
   dispaly: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Jacquard 12", system-ui;
 `;
 
 
@@ -17,6 +19,7 @@ const BodaciousBody = () => {
     <BodaciousBodyContainer>
       <ChangingName />
       <WhoAmI />
+      <Footer />
     </BodaciousBodyContainer>
   )
 }

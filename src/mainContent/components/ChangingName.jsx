@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import Carousel from './subcomponents/Carousel';
+import ThreeDeeCard from './subcomponents/ThreeDeeCard';
 
 const ChangingNameContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  height: 91vh;
+  height: 100vh;
 `;
 
 const NameContainer = styled.div`
-  margin-top: 15%;
+  display: flex;
+  justify-content: center;
 `;
 
 const Name = styled.h2`
@@ -21,28 +21,31 @@ const Name = styled.h2`
 `;
 
 const ChangingName = () => {
-  const [isHovered, setIsHovered] = useState(false);
-  const [change, setChange] = useState(false);
+  // const [isHovered, setIsHovered] = useState(false);
+  // const [change, setChange] = useState(false);
 
-  useEffect(() => {
-    if (isHovered) {
-      setTimeout(() => setChange(true), 500);
-    }
-  }, [isHovered]);
+  // useEffect(() => {
+  //   if (isHovered) {
+  //     setTimeout(() => setChange(true), 500);
+  //   }
+  // }, [isHovered]);
 
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
+  // const handleMouseEnter = () => {
+  //   setIsHovered(true);
+  // };
 
   return (
     <ChangingNameContainer>
-      <NameContainer>
+      {/* <NameContainer>
         <Name
           change={change}
           onMouseEnter={handleMouseEnter}
         >
           Kevin Spiwak
         </Name>
+      </NameContainer> */}
+      <NameContainer>
+        <ThreeDeeCard />
       </NameContainer>
       {/* want to probably put a carousel here that showcases my socials so it transitions well into the next section */}
     </ChangingNameContainer>

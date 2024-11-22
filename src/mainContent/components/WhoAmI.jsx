@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
+import Carousel from './subcomponents/Carousel';
 
 const Container = styled.div`
   width: 100vw;
-  height: 60vh;
   background: pink;
   margin-top: -0.2vh;
 `;
@@ -79,8 +79,7 @@ const WhoAmI = () => {
       <ParallaxSection backgroundImage="url('https://www.fodors.com/wp-content/uploads/2020/11/05_IconicSigns__TioPepe_shutterstock_1511878475.jpg')" />
       <ContentContainer>
         <ContentSection ref={(el) => el && hiddenElementsRef.current.push(el)} className="hidden">
-          <h1>Another Static Section</h1>
-          <p>This is another static content section.</p>
+        <Carousel />
         </ContentSection>
       </ContentContainer>
       <ParallaxSection backgroundImage="url('https://www.fodors.com/wp-content/uploads/2020/11/10_IconicSigns__FarineFiveRoses_shutterstock_482212780.jpg')" />
